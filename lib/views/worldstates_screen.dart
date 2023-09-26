@@ -1,6 +1,6 @@
 import 'package:covid_app/Models/worldstates_model.dart';
 import 'package:covid_app/Services/states_services.dart';
-import 'package:covid_app/views/countrie_detail_screen.dart';
+import 'package:covid_app/views/countries_list_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:pie_chart/pie_chart.dart';
@@ -43,7 +43,7 @@ class _WorldStatesScreenState extends State<WorldStatesScreen> with TickerProvid
             children: [
               SizedBox(height: MediaQuery.of(context).size.height * 0.01,),
               FutureBuilder(
-                  future: statesServices.getData(),
+                  future: statesServices.getStatsData(),
                   builder: (context, AsyncSnapshot<WorldStatesModel>snapshot){
                     if(!snapshot.hasData){
                       return Expanded(
@@ -92,7 +92,7 @@ class _WorldStatesScreenState extends State<WorldStatesScreen> with TickerProvid
                           ),
                           GestureDetector(
                             onTap:(){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>CountrieDetailScreen()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>CountriesListScreen()));
                             },
                             child: Container(
                               height: 50,
