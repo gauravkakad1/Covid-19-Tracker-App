@@ -1,6 +1,7 @@
-# covid_app
+# covid-19_Tracker_app
 
 A new Flutter project.
+used Rest Api for gathering information
 
 ## Getting Started
 
