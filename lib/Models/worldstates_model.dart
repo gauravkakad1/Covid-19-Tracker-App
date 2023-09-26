@@ -110,7 +110,8 @@ class WorldStatesModel {
   num? _recoveredPerOneMillion;
   num? _criticalPerOneMillion;
   num? _affectedCountries;
-WorldStatesModel copyWith({  num? updated,
+WorldStatesModel copyWith({
+  num? updated,
   num? cases,
   num? todayCases,
   num? deaths,

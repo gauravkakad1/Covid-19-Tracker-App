@@ -1,4 +1,4 @@
-import 'package:covid_app/Models/world_states_model.dart';
+import 'package:covid_app/Models/worldstates_model.dart';
 import 'package:covid_app/Services/states_services.dart';
 import 'package:covid_app/views/countrie_detail_screen.dart';
 import 'package:flutter/material.dart';
@@ -30,7 +30,7 @@ class _WorldStatesScreenState extends State<WorldStatesScreen> with TickerProvid
     Color(0xff4285F4),
     Color(0xff1aa260),
     Color(0xffde5246),
-  ];
+    ];
 
   StatesServices statesServices = StatesServices();
   @override
@@ -120,10 +120,15 @@ class _WorldStatesScreenState extends State<WorldStatesScreen> with TickerProvid
   }
 }
 
-class ReusableRow extends StatelessWidget {
+class ReusableRow extends StatefulWidget {
    final title,value;
    ReusableRow({super.key,required this.title , required this.value});
 
+  @override
+  State<ReusableRow> createState() => _ReusableRowState();
+}
+
+class _ReusableRowState extends State<ReusableRow> {
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -133,8 +138,8 @@ class ReusableRow extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(title , style: const TextStyle(fontSize: 15,fontWeight: FontWeight.w400)),
-              Text(value , style: const TextStyle(fontSize: 15,fontWeight: FontWeight.w400)),
+              Text(widget.title , style: const TextStyle(fontSize: 15,fontWeight: FontWeight.w400)),
+              Text(widget.value , style: const TextStyle(fontSize: 15,fontWeight: FontWeight.w400)),
             ],
           ),
           const SizedBox(height: 5,),
