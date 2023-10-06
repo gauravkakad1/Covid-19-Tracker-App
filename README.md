@@ -21,3 +21,15 @@ samples, guidance on mobile development, and a full API reference.
 ![Screenshot_20231003_083255](https://github.com/gauravkakad1/Flutter-Covid-19-Tracker-App/assets/120310412/f8204031-2d95-4bc6-b755-3a27f66906fb)
 ![Screenshot_20231003_083242](https://github.com/gauravkakad1/Flutter-Covid-19-Tracker-App/assets/120310412/00cba823-defa-4746-aaf9-1c951345731a)
 ![Screenshot_20231003_083221](https://github.com/gauravkakad1/Flutter-Covid-19-Tracker-App/assets/120310412/9c0d8225-bf36-4ffd-8f6e-7a9b06ce97a6)
+
+<div class="photo-gallery">
+    <img src="https://github.com/gauravkakad1/Flutter-Covid-19-Tracker-App/assets/120310412/08369b1f-fe8f-4e2c-984f-47eeaa2ad376" style="width:200px; height:400px;">
+    <img src="https://github.com/gauravkakad1/Flutter-Covid-19-Tracker-App/assets/120310412/6e2c7b4e-ca26-40e0-9499-304dc93ac49a" style="width:200px; height:400px;">
+    <img src="https://github.com/gauravkakad1/Flutter-Covid-19-Tracker-App/assets/120310412/f8204031-2d95-4bc6-b755-3a27f66906fb" style="width:200px; height:400px;">
+  <img src="https://github.com/gauravkakad1/Flutter-Covid-19-Tracker-App/assets/120310412/00cba823-defa-4746-aaf9-1c951345731a" style="width:200px; 
+height:400px;">
+  <img src="https://github.com/gauravkakad1/Flutter-Covid-19-Tracker-App/assets/120310412/9c0d8225-bf36-4ffd-8f6e-7a9b06ce97a6" style="width:200px; 
+height:400px;">
+
+
+</div>
