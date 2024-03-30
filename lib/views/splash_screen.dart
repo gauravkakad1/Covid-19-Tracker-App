@@ -11,11 +11,11 @@ class SplashScreen extends StatefulWidget {
   State<SplashScreen> createState() => _SplashScreenState();
 }
 
-class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMixin{
-
-  late final AnimationController _animation =AnimationController(
-    duration: const Duration(seconds: 3),vsync: this
-  )..repeat();
+class _SplashScreenState extends State<SplashScreen>
+    with TickerProviderStateMixin {
+  late final AnimationController _animation =
+      AnimationController(duration: const Duration(seconds: 3), vsync: this)
+        ..repeat();
 
   @override
   void dispose() {
@@ -23,12 +23,15 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
     super.dispose();
     _animation.dispose();
   }
+
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
-    Timer( const Duration(seconds: 5), () => Navigator.push(context, MaterialPageRoute(builder: (context)=>WorldStatesScreen())));
-
+    Timer(
+        const Duration(seconds: 5),
+        () => Navigator.push(context,
+            MaterialPageRoute(builder: (context) => WorldStatesScreen())));
   }
 
   @override
@@ -49,17 +52,18 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
                       child: Image(image: AssetImage("images/virus.png")),
                     ),
                   ),
-                  builder: (BuildContext context , Widget? child){
+                  builder: (BuildContext context, Widget? child) {
                     return Transform.rotate(
                       angle: _animation.value * 2.0 * math.pi,
                       child: child,
                     );
-                  }
+                  }),
+              SizedBox(height: MediaQuery.of(context).size.height * 0.08),
+              Text(
+                "Covid-19\nTracker App",
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
               ),
-              SizedBox(height: MediaQuery.of(context).size.height *0.08 ),
-              Text("Covid-19\nTracker App",
-              textAlign: TextAlign.center,
-              style: TextStyle( fontSize: 25,fontWeight: FontWeight.bold),),
             ],
           ),
         ),
