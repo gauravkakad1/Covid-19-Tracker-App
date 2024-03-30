@@ -2,6 +2,9 @@
 
 A new Flutter project.
 used Rest Api for gathering information
+- [Click here for Web (View in mobile Size)](https://covid-19-app-4ea40.web.app/)
+- [download android apk](https://drive.google.com/file/d/1orjKioePibHMZAw9lR6RO2bhJjRPf3fW/view?usp=drive_link)
+
 
 ## Getting Started
 
