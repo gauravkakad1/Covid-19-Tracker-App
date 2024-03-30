@@ -14,10 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Covid App',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        brightness: Brightness.dark
-      ),
+      theme: ThemeData(primarySwatch: Colors.blue, brightness: Brightness.dark),
       home: const SplashScreen(),
     );
   }
