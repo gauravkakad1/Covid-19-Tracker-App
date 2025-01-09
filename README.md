@@ -1,7 +1,3 @@
-PRD Flavor
-```sh
-flutter build apk --release --flavor dev -t lib/main_dev.dart
-```
 
 # covid-19_Tracker_app
 
